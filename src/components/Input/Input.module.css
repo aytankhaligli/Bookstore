@@ -1,0 +1,44 @@
+.inputBox {
+  width: 100%;
+  font-weight: 400;
+  text-align: left;
+  color: #000000de;
+  margin-top: 30px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.input {
+  font-size: 16px;
+  width: 100%;
+  padding: 6px 0;
+  display: inline-block;
+  border: none;
+  border-bottom: 2px solid #0000006b;
+  outline: none;
+  transition: border-color cubic-bezier(1, 0, 0, 1);
+}
+.input::placeholder {
+  font-family: "Roboto", sans-serif;
+}
+.input:focus {
+  /* border-bottom-color: #2a7de1; */
+  border-color: #0074d9;
+}
+.eyeIcon {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.error {
+  display: block;
+  color: #b8082a;
+  font-size: 12px;
+  position: absolute;
+  margin-top: 12px;
+}
+.error_border {
+  border-bottom-color: #b8082a;
+}
+.error_border:focus {
+  border-bottom: 3px solid #b8082a;
+}
