@@ -1,15 +1,15 @@
 import { useContext } from "react";
 import { PasswordToggleProvider } from "./context/PasswordToggleContext";
-import DashBoard from "./pages/DashBoard";
 import LoginPage from "./pages/LoginPage";
 import { LoginContext } from "./context/LoginContext";
+import MainPage from "./pages/MainPage";
 
 function App() {
   const { isLoggedIn } = useContext(LoginContext);
   return (
     <>
       {isLoggedIn ? (
-        <DashBoard />
+        <MainPage />
       ) : (
         <PasswordToggleProvider>
           <LoginPage />

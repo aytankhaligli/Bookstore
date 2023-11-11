@@ -7,7 +7,7 @@ import { useContext, useEffect, useState } from "react";
 import { LoginContext } from "../../context/LoginContext";
 function LoginPage() {
   const { showPassword } = useContext(PasswordToggleContext);
-  const { signIn } = useContext(LoginContext);
+  const { signIn, getData } = useContext(LoginContext);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [usernameError, setUsernameError] = useState(null);
